@@ -1,0 +1,268 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "SFML-2.5.1",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-SFML-2.5.1-Debug-3dc1d582e68269ca55fb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "SFML-2.5.1"
+				},
+				{
+					"build" : "SFML-2.5.1/src/SFML",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-SFML-2.5.1.src.SFML-Debug-d72d8fa125fdda4be5a5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "SFML-2.5.1/src/SFML"
+				},
+				{
+					"build" : "SFML-2.5.1/src/SFML/System",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-SFML-2.5.1.src.SFML.System-Debug-67dc02df6ca1254318d6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "SFML-2.5.1/src/SFML/System",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "SFML-2.5.1/src/SFML/Main",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-SFML-2.5.1.src.SFML.Main-Debug-58ea724c997dd7d51183.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "SFML-2.5.1/src/SFML/Main",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "SFML-2.5.1/src/SFML/Window",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-SFML-2.5.1.src.SFML.Window-Debug-62bfc27acde0c6b16410.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "SFML-2.5.1/src/SFML/Window",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "SFML-2.5.1/src/SFML/Network",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-SFML-2.5.1.src.SFML.Network-Debug-80f29a939e9cf4425d81.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "SFML-2.5.1/src/SFML/Network",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "SFML-2.5.1/src/SFML/Graphics",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-SFML-2.5.1.src.SFML.Graphics-Debug-dd2d0214ba4e176ef806.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "SFML-2.5.1/src/SFML/Graphics",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "SFML-2.5.1/src/SFML/Audio",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-SFML-2.5.1.src.SFML.Audio-Debug-7e6db58b39ef4e793199.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "SFML-2.5.1/src/SFML/Audio",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "RTGame",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "SFML",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "RTGame::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RTGame-Debug-218b3ab1098771122ab2.json",
+					"name" : "RTGame",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "sfml-audio::@45a759e4c4f4c6690729",
+					"jsonFile" : "target-sfml-audio-Debug-73addaed013b56c02048.json",
+					"name" : "sfml-audio",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "sfml-graphics::@028b5c1b397fa60e13b5",
+					"jsonFile" : "target-sfml-graphics-Debug-ae01ed09383aa0ec0535.json",
+					"name" : "sfml-graphics",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "sfml-main::@f4dcf8d600d9faf2ef57",
+					"jsonFile" : "target-sfml-main-Debug-d7f2cbcd7a350b294654.json",
+					"name" : "sfml-main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "sfml-network::@31ee62c713aec09c4c7b",
+					"jsonFile" : "target-sfml-network-Debug-b9eefbb1e68132c7dbd6.json",
+					"name" : "sfml-network",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "sfml-system::@da7a00f39089691e2fd6",
+					"jsonFile" : "target-sfml-system-Debug-33eb0b90fd08de971699.json",
+					"name" : "sfml-system",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "sfml-window::@ed632ce09520cd6affa6",
+					"jsonFile" : "target-sfml-window-Debug-d66a40eca91c88372b2a.json",
+					"name" : "sfml-window",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug",
+		"source" : "C:/Users/nickobelic1999/CLionProjects/RTGame"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
