@@ -37,6 +37,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/SFML-2.5.1/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/box2d-2.4.1/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

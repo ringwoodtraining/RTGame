@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_RTGame: phony || cmake_object_order_depe
 
 build CMakeFiles\RTGame.dir\main.cpp.obj: CXX_COMPILER__RTGame_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\main.cpp || cmake_object_order_depends_target_RTGame
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\SFML-2.5.1\include
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\SFML-2.5.1\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\include
   OBJECT_DIR = CMakeFiles\RTGame.dir
   OBJECT_FILE_DIR = CMakeFiles\RTGame.dir
   TARGET_COMPILE_PDB = CMakeFiles\RTGame.dir\
@@ -1690,9 +1690,1883 @@ build SFML-2.5.1\src\SFML\Audio\CMakeFiles\install\local.util: CUSTOM_COMMAND SF
 build SFML-2.5.1\src\SFML\Audio\install\local: phony SFML-2.5.1\src\SFML\Audio\CMakeFiles\install\local.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/nickobelic1999/CLionProjects/RTGame/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-2.4.1\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1 && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-2.4.1\edit_cache: phony box2d-2.4.1\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-2.4.1\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1 && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nickobelic1999\CLionProjects\RTGame -BC:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\rebuild_cache: phony box2d-2.4.1\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-2.4.1\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-2.4.1\CMakeFiles\install.util: CUSTOM_COMMAND box2d-2.4.1\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1 && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\install: phony box2d-2.4.1\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-2.4.1\CMakeFiles\install\local.util: CUSTOM_COMMAND box2d-2.4.1\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1 && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\install\local: phony box2d-2.4.1\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/nickobelic1999/CLionProjects/RTGame/box2d-2.4.1/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target box2d
+
+
+#############################################
+# Order-only phony target for box2d
+
+build cmake_object_order_depends_target_box2d: phony || box2d-2.4.1\src\CMakeFiles\box2d.dir
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_broad_phase.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_broad_phase.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_chain_shape.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_chain_shape.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_circle_shape.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_circle_shape.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_collide_circle.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_collide_circle.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_collide_edge.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_collide_edge.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_collide_polygon.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_collide_polygon.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_collision.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_collision.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_distance.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_distance.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_dynamic_tree.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_dynamic_tree.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_edge_shape.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_edge_shape.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_polygon_shape.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_polygon_shape.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_time_of_impact.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\collision\b2_time_of_impact.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\collision
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_block_allocator.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\common\b2_block_allocator.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\common
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_draw.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\common\b2_draw.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\common
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_math.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\common\b2_math.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\common
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_settings.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\common\b2_settings.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\common
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_stack_allocator.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\common\b2_stack_allocator.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\common
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_timer.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\common\b2_timer.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\common
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_body.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_body.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_chain_circle_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_chain_circle_contact.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_chain_polygon_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_chain_polygon_contact.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_circle_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_circle_contact.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_contact.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_contact_manager.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_contact_manager.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_contact_solver.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_contact_solver.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_distance_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_distance_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_edge_circle_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_edge_circle_contact.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_edge_polygon_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_edge_polygon_contact.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_fixture.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_fixture.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_friction_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_friction_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_gear_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_gear_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_island.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_island.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_motor_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_motor_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_mouse_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_mouse_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_polygon_circle_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_polygon_circle_contact.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_polygon_contact.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_polygon_contact.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_prismatic_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_prismatic_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_pulley_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_pulley_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_revolute_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_revolute_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_weld_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_weld_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_wheel_joint.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_wheel_joint.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_world.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_world.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_world_callbacks.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\dynamics\b2_world_callbacks.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+build box2d-2.4.1\src\CMakeFiles\box2d.dir\rope\b2_rope.cpp.obj: CXX_COMPILER__box2d_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\rope\b2_rope.cpp || cmake_object_order_depends_target_box2d
+  DEFINES = -DB2_SHARED -Dbox2d_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir\rope
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target box2d
+
+
+#############################################
+# Link the shared library box2d-2.4.1\bin\box2d.dll
+
+build box2d-2.4.1\bin\box2d.dll box2d-2.4.1\bin\box2d.lib: CXX_SHARED_LIBRARY_LINKER__box2d_Debug box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_broad_phase.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_chain_shape.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_circle_shape.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_collide_circle.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_collide_edge.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_collide_polygon.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_collision.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_distance.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_dynamic_tree.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_edge_shape.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_polygon_shape.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\collision\b2_time_of_impact.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_block_allocator.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_draw.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_math.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_settings.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_stack_allocator.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\common\b2_timer.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_body.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_chain_circle_contact.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_chain_polygon_contact.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_circle_contact.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_contact.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_contact_manager.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_contact_solver.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_distance_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_edge_circle_contact.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_edge_polygon_contact.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_fixture.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_friction_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_gear_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_island.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_motor_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_mouse_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_polygon_circle_contact.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_polygon_contact.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_prismatic_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_pulley_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_revolute_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_weld_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_wheel_joint.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_world.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\dynamics\b2_world_callbacks.cpp.obj box2d-2.4.1\src\CMakeFiles\box2d.dir\rope\b2_rope.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = box2d-2.4.1\src\CMakeFiles\box2d.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_COMPILE_PDB = box2d-2.4.1\src\box2d.pdb
+  TARGET_FILE = box2d-2.4.1\bin\box2d.dll
+  TARGET_IMPLIB = box2d-2.4.1\bin\box2d.lib
+  TARGET_PDB = box2d-2.4.1\bin\box2d.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-2.4.1\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-2.4.1\src\edit_cache: phony box2d-2.4.1\src\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-2.4.1\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nickobelic1999\CLionProjects\RTGame -BC:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\src\rebuild_cache: phony box2d-2.4.1\src\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-2.4.1\src\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-2.4.1\src\CMakeFiles\install.util: CUSTOM_COMMAND box2d-2.4.1\src\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\src\install: phony box2d-2.4.1\src\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-2.4.1\src\CMakeFiles\install\local.util: CUSTOM_COMMAND box2d-2.4.1\src\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\src && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\src\install\local: phony box2d-2.4.1\src\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/nickobelic1999/CLionProjects/RTGame/box2d-2.4.1/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unit_test
+
+
+#############################################
+# Order-only phony target for unit_test
+
+build cmake_object_order_depends_target_unit_test: phony || cmake_object_order_depends_target_box2d
+
+build box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\hello_world.cpp.obj: CXX_COMPILER__unit_test_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\unit-test\hello_world.cpp || cmake_object_order_depends_target_unit_test
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include
+  OBJECT_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\
+  TARGET_PDB = box2d-2.4.1\bin\unit_test.pdb
+
+build box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\collision_test.cpp.obj: CXX_COMPILER__unit_test_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\unit-test\collision_test.cpp || cmake_object_order_depends_target_unit_test
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include
+  OBJECT_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\
+  TARGET_PDB = box2d-2.4.1\bin\unit_test.pdb
+
+build box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\joint_test.cpp.obj: CXX_COMPILER__unit_test_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\unit-test\joint_test.cpp || cmake_object_order_depends_target_unit_test
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include
+  OBJECT_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\
+  TARGET_PDB = box2d-2.4.1\bin\unit_test.pdb
+
+build box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\math_test.cpp.obj: CXX_COMPILER__unit_test_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\unit-test\math_test.cpp || cmake_object_order_depends_target_unit_test
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include
+  OBJECT_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\
+  TARGET_PDB = box2d-2.4.1\bin\unit_test.pdb
+
+build box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\world_test.cpp.obj: CXX_COMPILER__unit_test_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\unit-test\world_test.cpp || cmake_object_order_depends_target_unit_test
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include
+  OBJECT_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\
+  TARGET_PDB = box2d-2.4.1\bin\unit_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unit_test
+
+
+#############################################
+# Link the executable box2d-2.4.1\bin\unit_test.exe
+
+build box2d-2.4.1\bin\unit_test.exe: CXX_EXECUTABLE_LINKER__unit_test_Debug box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\hello_world.cpp.obj box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\collision_test.cpp.obj box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\joint_test.cpp.obj box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\math_test.cpp.obj box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\world_test.cpp.obj | box2d-2.4.1\bin\box2d.lib || box2d-2.4.1\bin\box2d.dll
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = box2d-2.4.1\bin\box2d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = box2d-2.4.1\unit-test\CMakeFiles\unit_test.dir\
+  TARGET_FILE = box2d-2.4.1\bin\unit_test.exe
+  TARGET_IMPLIB = box2d-2.4.1\bin\unit_test.lib
+  TARGET_PDB = box2d-2.4.1\bin\unit_test.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-2.4.1\unit-test\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\unit-test && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-2.4.1\unit-test\edit_cache: phony box2d-2.4.1\unit-test\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-2.4.1\unit-test\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\unit-test && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nickobelic1999\CLionProjects\RTGame -BC:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\unit-test\rebuild_cache: phony box2d-2.4.1\unit-test\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-2.4.1\unit-test\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-2.4.1\unit-test\CMakeFiles\install.util: CUSTOM_COMMAND box2d-2.4.1\unit-test\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\unit-test && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\unit-test\install: phony box2d-2.4.1\unit-test\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-2.4.1\unit-test\CMakeFiles\install\local.util: CUSTOM_COMMAND box2d-2.4.1\unit-test\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\unit-test && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\unit-test\install\local: phony box2d-2.4.1\unit-test\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/nickobelic1999/CLionProjects/RTGame/box2d-2.4.1/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Order-only phony target for glad
+
+build cmake_object_order_depends_target_glad: phony || box2d-2.4.1\extern\glad\CMakeFiles\glad.dir
+
+build box2d-2.4.1\extern\glad\CMakeFiles\glad.dir\src\gl.c.obj: C_COMPILER__glad_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\src\gl.c || cmake_object_order_depends_target_glad
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\extern\glad\CMakeFiles\glad.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glad\CMakeFiles\glad.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glad\CMakeFiles\glad.dir\glad.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glad.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Link the static library box2d-2.4.1\bin\glad.lib
+
+build box2d-2.4.1\bin\glad.lib: C_STATIC_LIBRARY_LINKER__glad_Debug box2d-2.4.1\extern\glad\CMakeFiles\glad.dir\src\gl.c.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = box2d-2.4.1\extern\glad\CMakeFiles\glad.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glad\CMakeFiles\glad.dir\glad.pdb
+  TARGET_FILE = box2d-2.4.1\bin\glad.lib
+  TARGET_PDB = box2d-2.4.1\bin\glad.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-2.4.1\extern\glad\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\glad && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-2.4.1\extern\glad\edit_cache: phony box2d-2.4.1\extern\glad\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-2.4.1\extern\glad\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\glad && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nickobelic1999\CLionProjects\RTGame -BC:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\glad\rebuild_cache: phony box2d-2.4.1\extern\glad\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-2.4.1\extern\glad\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-2.4.1\extern\glad\CMakeFiles\install.util: CUSTOM_COMMAND box2d-2.4.1\extern\glad\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\glad && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\glad\install: phony box2d-2.4.1\extern\glad\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-2.4.1\extern\glad\CMakeFiles\install\local.util: CUSTOM_COMMAND box2d-2.4.1\extern\glad\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\glad && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\glad\install\local: phony box2d-2.4.1\extern\glad\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/nickobelic1999/CLionProjects/RTGame/box2d-2.4.1/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Order-only phony target for glfw
+
+build cmake_object_order_depends_target_glfw: phony || box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\context.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\init.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\init.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\input.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\input.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\monitor.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\monitor.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\vulkan.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\vulkan.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\window.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\window.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_init.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\win32_init.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_joystick.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\win32_joystick.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_monitor.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\win32_monitor.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_time.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\win32_time.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_thread.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\win32_thread.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_window.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\win32_window.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\wgl_context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\wgl_context.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\egl_context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\egl_context.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\osmesa_context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\src\osmesa_context.c || cmake_object_order_depends_target_glfw
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Link the static library box2d-2.4.1\bin\glfw.lib
+
+build box2d-2.4.1\bin\glfw.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\context.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\init.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\input.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\monitor.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\vulkan.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\window.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_init.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_joystick.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_monitor.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_time.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_thread.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\win32_window.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\wgl_context.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\egl_context.c.obj box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\src\osmesa_context.c.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\glfw\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_FILE = box2d-2.4.1\bin\glfw.lib
+  TARGET_PDB = box2d-2.4.1\bin\glfw.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\glfw && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-2.4.1\extern\glfw\edit_cache: phony box2d-2.4.1\extern\glfw\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\glfw && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nickobelic1999\CLionProjects\RTGame -BC:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\glfw\rebuild_cache: phony box2d-2.4.1\extern\glfw\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-2.4.1\extern\glfw\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\install.util: CUSTOM_COMMAND box2d-2.4.1\extern\glfw\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\glfw && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\glfw\install: phony box2d-2.4.1\extern\glfw\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-2.4.1\extern\glfw\CMakeFiles\install\local.util: CUSTOM_COMMAND box2d-2.4.1\extern\glfw\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\glfw && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\glfw\install\local: phony box2d-2.4.1\extern\glfw\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/nickobelic1999/CLionProjects/RTGame/box2d-2.4.1/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target imgui
+
+
+#############################################
+# Order-only phony target for imgui
+
+build cmake_object_order_depends_target_imgui: phony || box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir
+
+build box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui.cpp.obj: CXX_COMPILER__imgui_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\imgui.cpp || cmake_object_order_depends_target_imgui
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\..
+  OBJECT_DIR = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = box2d-2.4.1\bin\imgui.pdb
+
+build box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui_demo.cpp.obj: CXX_COMPILER__imgui_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\imgui_demo.cpp || cmake_object_order_depends_target_imgui
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\..
+  OBJECT_DIR = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = box2d-2.4.1\bin\imgui.pdb
+
+build box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui_draw.cpp.obj: CXX_COMPILER__imgui_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\imgui_draw.cpp || cmake_object_order_depends_target_imgui
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\..
+  OBJECT_DIR = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = box2d-2.4.1\bin\imgui.pdb
+
+build box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui_widgets.cpp.obj: CXX_COMPILER__imgui_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\imgui_widgets.cpp || cmake_object_order_depends_target_imgui
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\..
+  OBJECT_DIR = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = box2d-2.4.1\bin\imgui.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target imgui
+
+
+#############################################
+# Link the static library box2d-2.4.1\bin\imgui.lib
+
+build box2d-2.4.1\bin\imgui.lib: CXX_STATIC_LIBRARY_LINKER__imgui_Debug box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui.cpp.obj box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui_demo.cpp.obj box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui_draw.cpp.obj box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui_widgets.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\imgui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_FILE = box2d-2.4.1\bin\imgui.lib
+  TARGET_PDB = box2d-2.4.1\bin\imgui.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-2.4.1\extern\imgui\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\imgui && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-2.4.1\extern\imgui\edit_cache: phony box2d-2.4.1\extern\imgui\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-2.4.1\extern\imgui\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\imgui && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nickobelic1999\CLionProjects\RTGame -BC:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\imgui\rebuild_cache: phony box2d-2.4.1\extern\imgui\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-2.4.1\extern\imgui\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-2.4.1\extern\imgui\CMakeFiles\install.util: CUSTOM_COMMAND box2d-2.4.1\extern\imgui\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\imgui && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\imgui\install: phony box2d-2.4.1\extern\imgui\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-2.4.1\extern\imgui\CMakeFiles\install\local.util: CUSTOM_COMMAND box2d-2.4.1\extern\imgui\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\imgui && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\imgui\install\local: phony box2d-2.4.1\extern\imgui\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/nickobelic1999/CLionProjects/RTGame/box2d-2.4.1/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target sajson
+
+
+#############################################
+# Order-only phony target for sajson
+
+build cmake_object_order_depends_target_sajson: phony || box2d-2.4.1\extern\sajson\CMakeFiles\sajson.dir
+
+build box2d-2.4.1\extern\sajson\CMakeFiles\sajson.dir\sajson.cpp.obj: CXX_COMPILER__sajson_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\sajson.cpp || cmake_object_order_depends_target_sajson
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\..
+  OBJECT_DIR = box2d-2.4.1\extern\sajson\CMakeFiles\sajson.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\extern\sajson\CMakeFiles\sajson.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\sajson\CMakeFiles\sajson.dir\sajson.pdb
+  TARGET_PDB = box2d-2.4.1\bin\sajson.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target sajson
+
+
+#############################################
+# Link the static library box2d-2.4.1\bin\sajson.lib
+
+build box2d-2.4.1\bin\sajson.lib: CXX_STATIC_LIBRARY_LINKER__sajson_Debug box2d-2.4.1\extern\sajson\CMakeFiles\sajson.dir\sajson.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = box2d-2.4.1\extern\sajson\CMakeFiles\sajson.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = box2d-2.4.1\extern\sajson\CMakeFiles\sajson.dir\sajson.pdb
+  TARGET_FILE = box2d-2.4.1\bin\sajson.lib
+  TARGET_PDB = box2d-2.4.1\bin\sajson.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-2.4.1\extern\sajson\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\sajson && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-2.4.1\extern\sajson\edit_cache: phony box2d-2.4.1\extern\sajson\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-2.4.1\extern\sajson\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\sajson && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nickobelic1999\CLionProjects\RTGame -BC:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\sajson\rebuild_cache: phony box2d-2.4.1\extern\sajson\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-2.4.1\extern\sajson\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-2.4.1\extern\sajson\CMakeFiles\install.util: CUSTOM_COMMAND box2d-2.4.1\extern\sajson\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\sajson && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\sajson\install: phony box2d-2.4.1\extern\sajson\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-2.4.1\extern\sajson\CMakeFiles\install\local.util: CUSTOM_COMMAND box2d-2.4.1\extern\sajson\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\extern\sajson && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\extern\sajson\install\local: phony box2d-2.4.1\extern\sajson\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/nickobelic1999/CLionProjects/RTGame/box2d-2.4.1/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target testbed
+
+
+#############################################
+# Order-only phony target for testbed
+
+build cmake_object_order_depends_target_testbed: phony || cmake_object_order_depends_target_box2d cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui cmake_object_order_depends_target_sajson
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\draw.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\draw.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\imgui_impl_glfw.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\imgui_impl_glfw.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\imgui_impl_opengl3.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\imgui_impl_opengl3.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\main.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\main.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\settings.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\settings.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\test.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\test.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\add_pair.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\add_pair.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\apply_force.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\apply_force.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\body_types.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\body_types.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\box_stack.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\box_stack.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\breakable.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\breakable.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\bridge.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\bridge.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\bullet_test.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\bullet_test.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\cantilever.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\cantilever.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\car.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\car.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\chain.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\chain.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\chain_problem.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\chain_problem.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\character_collision.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\character_collision.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\circle_stack.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\circle_stack.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\collision_filtering.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\collision_filtering.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\collision_processing.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\collision_processing.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\compound_shapes.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\compound_shapes.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\confined.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\confined.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\continuous_test.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\continuous_test.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\convex_hull.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\convex_hull.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\conveyor_belt.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\conveyor_belt.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\distance_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\distance_joint.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\distance_test.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\distance_test.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\dominos.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\dominos.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\dump_loader.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\dump_loader.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\dynamic_tree.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\dynamic_tree.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\edge_shapes.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\edge_shapes.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\edge_test.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\edge_test.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\friction.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\friction.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\gear_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\gear_joint.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\heavy1.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\heavy1.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\heavy2.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\heavy2.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\mobile_balanced.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\mobile_balanced.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\mobile_unbalanced.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\mobile_unbalanced.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\motor_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\motor_joint.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\pinball.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\pinball.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\platformer.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\platformer.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\polygon_collision.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\polygon_collision.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\polygon_shapes.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\polygon_shapes.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\prismatic_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\prismatic_joint.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\pulley_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\pulley_joint.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\pyramid.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\pyramid.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\ray_cast.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\ray_cast.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\restitution.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\restitution.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\revolute_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\revolute_joint.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\rope.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\rope.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\sensor.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\sensor.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\shape_cast.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\shape_cast.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\shape_editing.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\shape_editing.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\skier.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\skier.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\slider_crank_1.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\slider_crank_1.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\slider_crank_2.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\slider_crank_2.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\theo_jansen.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\theo_jansen.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\tiles.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\tiles.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\time_of_impact.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\time_of_impact.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\tumbler.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\tumbler.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\web.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\web.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\wheel_joint.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\wheel_joint.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+build box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\wrecking_ball.cpp.obj: CXX_COMPILER__testbed_Debug C$:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed\tests\wrecking_ball.cpp || cmake_object_order_depends_target_testbed
+  DEFINES = -DB2_SHARED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\testbed -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\src\..\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glfw\include -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\imgui\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\sajson\.. -IC:\Users\nickobelic1999\CLionProjects\RTGame\box2d-2.4.1\extern\glad\include
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  OBJECT_FILE_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target testbed
+
+
+#############################################
+# Link the executable box2d-2.4.1\bin\testbed.exe
+
+build box2d-2.4.1\bin\testbed.exe: CXX_EXECUTABLE_LINKER__testbed_Debug box2d-2.4.1\testbed\CMakeFiles\testbed.dir\draw.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\imgui_impl_glfw.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\imgui_impl_opengl3.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\main.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\settings.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\test.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\add_pair.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\apply_force.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\body_types.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\box_stack.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\breakable.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\bridge.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\bullet_test.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\cantilever.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\car.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\chain.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\chain_problem.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\character_collision.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\circle_stack.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\collision_filtering.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\collision_processing.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\compound_shapes.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\confined.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\continuous_test.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\convex_hull.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\conveyor_belt.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\distance_joint.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\distance_test.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\dominos.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\dump_loader.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\dynamic_tree.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\edge_shapes.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\edge_test.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\friction.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\gear_joint.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\heavy1.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\heavy2.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\mobile_balanced.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\mobile_unbalanced.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\motor_joint.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\pinball.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\platformer.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\polygon_collision.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\polygon_shapes.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\prismatic_joint.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\pulley_joint.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\pyramid.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\ray_cast.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\restitution.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\revolute_joint.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\rope.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\sensor.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\shape_cast.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\shape_editing.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\skier.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\slider_crank_1.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\slider_crank_2.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\theo_jansen.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\tiles.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\time_of_impact.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\tumbler.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\web.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\wheel_joint.cpp.obj box2d-2.4.1\testbed\CMakeFiles\testbed.dir\tests\wrecking_ball.cpp.obj | box2d-2.4.1\bin\box2d.lib box2d-2.4.1\bin\glfw.lib box2d-2.4.1\bin\imgui.lib box2d-2.4.1\bin\sajson.lib box2d-2.4.1\bin\glad.lib || box2d-2.4.1\bin\box2d.dll box2d-2.4.1\bin\glad.lib box2d-2.4.1\bin\glfw.lib box2d-2.4.1\bin\imgui.lib box2d-2.4.1\bin\sajson.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = box2d-2.4.1\bin\box2d.lib  box2d-2.4.1\bin\glfw.lib  box2d-2.4.1\bin\imgui.lib  box2d-2.4.1\bin\sajson.lib  box2d-2.4.1\bin\glad.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = box2d-2.4.1\testbed\CMakeFiles\testbed.dir
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\testbed && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/nickobelic1999/CLionProjects/RTGame/box2d-2.4.1/testbed/data/ C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/box2d-2.4.1/testbed/data/"
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = box2d-2.4.1\testbed\CMakeFiles\testbed.dir\
+  TARGET_FILE = box2d-2.4.1\bin\testbed.exe
+  TARGET_IMPLIB = box2d-2.4.1\bin\testbed.lib
+  TARGET_PDB = box2d-2.4.1\bin\testbed.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build box2d-2.4.1\testbed\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\testbed && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build box2d-2.4.1\testbed\edit_cache: phony box2d-2.4.1\testbed\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build box2d-2.4.1\testbed\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\testbed && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nickobelic1999\CLionProjects\RTGame -BC:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\testbed\rebuild_cache: phony box2d-2.4.1\testbed\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build box2d-2.4.1\testbed\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build box2d-2.4.1\testbed\CMakeFiles\install.util: CUSTOM_COMMAND box2d-2.4.1\testbed\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\testbed && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\testbed\install: phony box2d-2.4.1\testbed\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build box2d-2.4.1\testbed\CMakeFiles\install\local.util: CUSTOM_COMMAND box2d-2.4.1\testbed\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nickobelic1999\CLionProjects\RTGame\out\build\x64-Debug\box2d-2.4.1\testbed && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build box2d-2.4.1\testbed\install\local: phony box2d-2.4.1\testbed\CMakeFiles\install\local.util
+
+# =============================================================================
 # Target aliases.
 
 build RTGame: phony RTGame.exe
+
+build box2d: phony box2d-2.4.1\bin\box2d.dll
+
+build box2d.dll: phony box2d-2.4.1\bin\box2d.dll
+
+build glad: phony box2d-2.4.1\bin\glad.lib
+
+build glad.lib: phony box2d-2.4.1\bin\glad.lib
+
+build glfw: phony box2d-2.4.1\bin\glfw.lib
+
+build glfw.lib: phony box2d-2.4.1\bin\glfw.lib
+
+build imgui: phony box2d-2.4.1\bin\imgui.lib
+
+build imgui.lib: phony box2d-2.4.1\bin\imgui.lib
+
+build sajson: phony box2d-2.4.1\bin\sajson.lib
+
+build sajson.lib: phony box2d-2.4.1\bin\sajson.lib
 
 build sfml-audio: phony SFML-2.5.1\lib\sfml-audio-d-2.dll
 
@@ -1718,6 +3592,14 @@ build sfml-window: phony SFML-2.5.1\lib\sfml-window-d-2.dll
 
 build sfml-window-d-2.dll: phony SFML-2.5.1\lib\sfml-window-d-2.dll
 
+build testbed: phony box2d-2.4.1\bin\testbed.exe
+
+build testbed.exe: phony box2d-2.4.1\bin\testbed.exe
+
+build unit_test: phony box2d-2.4.1\bin\unit_test.exe
+
+build unit_test.exe: phony box2d-2.4.1\bin\unit_test.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -1726,7 +3608,7 @@ build sfml-window-d-2.dll: phony SFML-2.5.1\lib\sfml-window-d-2.dll
 #############################################
 # Folder: C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug
 
-build all: phony RTGame.exe SFML-2.5.1\all
+build all: phony RTGame.exe SFML-2.5.1\all box2d-2.4.1\all
 
 # =============================================================================
 
@@ -1785,20 +3667,76 @@ build SFML-2.5.1\src\SFML\System\all: phony SFML-2.5.1\lib\sfml-system-d-2.dll
 build SFML-2.5.1\src\SFML\Window\all: phony SFML-2.5.1\lib\sfml-window-d-2.dll
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/box2d-2.4.1
+
+build box2d-2.4.1\all: phony box2d-2.4.1\src\all box2d-2.4.1\unit-test\all box2d-2.4.1\extern\glad\all box2d-2.4.1\extern\glfw\all box2d-2.4.1\extern\imgui\all box2d-2.4.1\extern\sajson\all box2d-2.4.1\testbed\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/box2d-2.4.1/extern/glad
+
+build box2d-2.4.1\extern\glad\all: phony box2d-2.4.1\bin\glad.lib
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/box2d-2.4.1/extern/glfw
+
+build box2d-2.4.1\extern\glfw\all: phony box2d-2.4.1\bin\glfw.lib
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/box2d-2.4.1/extern/imgui
+
+build box2d-2.4.1\extern\imgui\all: phony box2d-2.4.1\bin\imgui.lib
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/box2d-2.4.1/extern/sajson
+
+build box2d-2.4.1\extern\sajson\all: phony box2d-2.4.1\bin\sajson.lib
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/box2d-2.4.1/src
+
+build box2d-2.4.1\src\all: phony box2d-2.4.1\bin\box2d.dll
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/box2d-2.4.1/testbed
+
+build box2d-2.4.1\testbed\all: phony box2d-2.4.1\bin\testbed.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/nickobelic1999/CLionProjects/RTGame/out/build/x64-Debug/box2d-2.4.1/unit-test
+
+build box2d-2.4.1\unit-test\all: phony box2d-2.4.1\bin\unit_test.exe
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\SFML-2.5.1\CMakeLists.txt ..\..\..\SFML-2.5.1\cmake\Config.cmake ..\..\..\SFML-2.5.1\cmake\Macros.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindFLAC.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindFreetype.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindVorbis.cmake ..\..\..\SFML-2.5.1\cmake\SFMLConfig.cmake.in ..\..\..\SFML-2.5.1\cmake\SFMLConfigDependencies.cmake.in ..\..\..\SFML-2.5.1\src\SFML\Audio\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Graphics\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Main\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Network\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\System\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Window\CMakeLists.txt C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckTypeSize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindOpenAL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.23.22060601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\SFML-2.5.1\CMakeLists.txt ..\..\..\SFML-2.5.1\cmake\Config.cmake ..\..\..\SFML-2.5.1\cmake\Macros.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindFLAC.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindFreetype.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindVorbis.cmake ..\..\..\SFML-2.5.1\cmake\SFMLConfig.cmake.in ..\..\..\SFML-2.5.1\cmake\SFMLConfigDependencies.cmake.in ..\..\..\SFML-2.5.1\src\SFML\Audio\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Graphics\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Main\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Network\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\System\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Window\CMakeLists.txt ..\..\..\box2d-2.4.1\CMakeLists.txt ..\..\..\box2d-2.4.1\extern\glad\CMakeLists.txt ..\..\..\box2d-2.4.1\extern\glfw\CMakeLists.txt ..\..\..\box2d-2.4.1\extern\imgui\CMakeLists.txt ..\..\..\box2d-2.4.1\extern\sajson\CMakeLists.txt ..\..\..\box2d-2.4.1\src\CMakeLists.txt ..\..\..\box2d-2.4.1\testbed\CMakeLists.txt ..\..\..\box2d-2.4.1\unit-test\CMakeLists.txt C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFile.c.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckTypeSize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindOpenAL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.23.22060601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\SFML-2.5.1\CMakeLists.txt ..\..\..\SFML-2.5.1\cmake\Config.cmake ..\..\..\SFML-2.5.1\cmake\Macros.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindFLAC.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindFreetype.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindVorbis.cmake ..\..\..\SFML-2.5.1\cmake\SFMLConfig.cmake.in ..\..\..\SFML-2.5.1\cmake\SFMLConfigDependencies.cmake.in ..\..\..\SFML-2.5.1\src\SFML\Audio\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Graphics\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Main\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Network\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\System\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Window\CMakeLists.txt C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckTypeSize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindOpenAL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.23.22060601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\SFML-2.5.1\CMakeLists.txt ..\..\..\SFML-2.5.1\cmake\Config.cmake ..\..\..\SFML-2.5.1\cmake\Macros.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindFLAC.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindFreetype.cmake ..\..\..\SFML-2.5.1\cmake\Modules\FindVorbis.cmake ..\..\..\SFML-2.5.1\cmake\SFMLConfig.cmake.in ..\..\..\SFML-2.5.1\cmake\SFMLConfigDependencies.cmake.in ..\..\..\SFML-2.5.1\src\SFML\Audio\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Graphics\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Main\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Network\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\System\CMakeLists.txt ..\..\..\SFML-2.5.1\src\SFML\Window\CMakeLists.txt ..\..\..\box2d-2.4.1\CMakeLists.txt ..\..\..\box2d-2.4.1\extern\glad\CMakeLists.txt ..\..\..\box2d-2.4.1\extern\glfw\CMakeLists.txt ..\..\..\box2d-2.4.1\extern\imgui\CMakeLists.txt ..\..\..\box2d-2.4.1\extern\sajson\CMakeLists.txt ..\..\..\box2d-2.4.1\src\CMakeLists.txt ..\..\..\box2d-2.4.1\testbed\CMakeLists.txt ..\..\..\box2d-2.4.1\unit-test\CMakeLists.txt C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFile.c.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckTypeSize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindOpenAL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.23.22060601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake: phony
 
 
 #############################################
